@@ -15,7 +15,7 @@
 	Nos ayudan a mejorar!!
 ]]--
 
-dofile("lcd_i2c.lua")
+dofile("CVR_lcd_i2c.lua")
 
 i2c_init(true, 0x27)
 
