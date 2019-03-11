@@ -17,7 +17,7 @@
 
 dofile("CVR_lcd_i2c.lua")
 
-i2c_init(true,4,1) --puedes usar los cualquier pin del 1 al 12
+i2c_init(true,2,1) --puedes usar los cualquier pin del 1 al 12
 
 lcd_init(0x27) --inicia el display
 lcd_cursorOn(true,true) -- cursor on, cursor blink on
