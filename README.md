@@ -20,11 +20,11 @@ lcd_setCursor(2,0)
 lcd_print("Tienda virtual!") 
 ```
 # Funciones
-i2c_init(true,SDA,SCL) ||inicia el puerto i2c en los pines asignador
+i2c_init(true,SDA,SCL) inicia el puerto i2c en los pines asignados
 
-lcd_init(address) ||inicia la comunicacion con la pantalla en la direccion asgnada
+lcd_init(address) inicia la comunicacion con la pantalla en la direccion asgnada
 
-lcd_clear() 	|| borra todo el texto de la pantalla
+lcd_clear() 	borra todo el texto de la pantalla
 
 lcd_cursorOn(on,blink)	enciende o apaga el cursor de la pantalla, cursor fijo o blink
 
