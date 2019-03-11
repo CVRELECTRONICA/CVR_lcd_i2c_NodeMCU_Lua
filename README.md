@@ -26,12 +26,17 @@ lcd_init(address) ||inicia la comunicacion con la pantalla en la direccion asgna
 
 lcd_clear() 	|| borra todo el texto de la pantalla
 
-lcd_cursorOn(on,blink)	||enciende o apaga el cursor de la pantalla, cursor fijo o blink
-lcd_ledOn(onLed) ||enciende o apaga el led de la pantalla
-lcd_shiftToleft() || desplaza la pantalla hace la izquierda
-lcd_shiftToright() || desplaza la pantalla hace la derecha
-lcd_setCursor(y,x)	||posiciona el cursor en la direccion asignada
-lcd_print(stringData) ||muestra el texto o variable en la pantalla
+lcd_cursorOn(on,blink)	enciende o apaga el cursor de la pantalla, cursor fijo o blink
+
+lcd_ledOn(onLed) enciende o apaga el led de la pantalla
+
+lcd_shiftToleft()  desplaza la pantalla hace la izquierda
+
+lcd_shiftToright()  desplaza la pantalla hace la derecha
+
+lcd_setCursor(y,x)	posiciona el cursor en la direccion asignada
+
+lcd_print(stringData) muestra el texto o variable en la pantalla
 # ----
 Si tienes dudas, recomendaciones o simplemente quieres saludar escribenos un mensaje a develop@cvrelectronica.com con gusto responderemos lo que sea que quieras decirnos.
 
