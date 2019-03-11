@@ -17,10 +17,33 @@
 
 dofile("CVR_lcd_i2c.lua")
 
-i2c_init(true, 0x27)
+i2c_init(true,4,1) --puedes usar los cualquier pin del 1 al 12
 
-lcd_init() --inicia el display
+lcd_init(0x27) --inicia el display
+lcd_cursorOn(true,true) -- cursor on, cursor blink on
 lcd_setCursor(1,0) -- posiciona el cursor en la primera linea, primer segmento
 lcd_print("CVR ELECTRONICA") --muestra el mensaje en la pantalla
 lcd_setCursor(2,0) --posiciona el cursor en la segunda linea,primer segmento
 lcd_print("Tienda virtual!") -- muestra el mensaje
+tmr.delay(1000000)
+for i=0,1,1 do
+	lcd_ledOn(false)
+	tmr.delay(500000)
+	lcd_ledOn(true)
+	tmr.delay(500000)
+end
+
+for i=0,15,1 do
+lcd_shiftToleft()
+tmr.delay(200000)
+end
+
+for i=0,15,1 do
+lcd_shiftToright()
+tmr.delay(200000)
+end
+lcd_clear()
+lcd_setCursor(1,0) -- posiciona el cursor en la primera linea, primer segmento
+lcd_print("WWW.CVRELECTRONI") --muestra el mensaje en la pantalla
+lcd_setCursor(2,0) --posiciona el cursor en la segunda linea,primer segmento
+lcd_print("CA.COM") -- muestra el mensaje
